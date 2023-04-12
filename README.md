@@ -40,9 +40,9 @@ May contain other components                            | May contain other comp
 
 > There is no need for rxjs, using this approach
 
-1. add filter to state
-2. use selector to filter data, using fiter state
-3. on input change, push entry to state
+1. add filter-property to state
+2. use selector to filter data, using fiter-property (from state)
+3. on input change, push fiter-property to state
 
 ### Using effect to filter on server side
 
