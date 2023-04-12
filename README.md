@@ -50,6 +50,6 @@ May contain other components                            | May contain other comp
 
 ## Information
 
-### Best proactice
+### Best practice
 
 - https://indepth.dev/posts/1442/ngrx-bad-practices
