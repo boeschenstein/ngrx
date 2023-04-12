@@ -6,6 +6,18 @@
 
 <https://app.pluralsight.com/library/courses/angular-ngrx-getting-started>
 
+## Actions
+
+### Action hygiene
+
+Action hygiene is important: <https://www.youtube.com/watch?v=JmnsEvoy-gY>
+
+> Do not reuse actions for different scenarios
+
+```js
+[Source] Event
+```
+
 ## Container + Presentation 
 
 (smart/dumb, fat/skinny, stateful/pure, components/screens)
@@ -21,3 +33,23 @@ Have injected dependencies                              | No dependencies on the
 Are stateful and specify how data is loaded and changed | Don't specify hwo data is loaded or changed but emit events via @Output
 Top level routes                                        | Receive data via @Inputs
 May contain other components                            | May contain other components
+
+## Search/Filter
+
+### All data is client side: no no effect involved
+
+> There is no need for rxjs, using this approach
+
+1. add filter to state
+2. use selector to filter data, using fiter state
+3. on input change, push entry to state
+
+### Using effect to filter on server side
+
+<https://medium.com/front-end-weekly/managing-state-in-angular-apps-with-ngrx-store-and-ngrx-effects-part-3-99fe2e0a7082>
+
+## Information
+
+### Best proactice
+
+- https://indepth.dev/posts/1442/ngrx-bad-practices
